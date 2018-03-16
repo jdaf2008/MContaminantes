@@ -1,7 +1,7 @@
 
 # MODULO DISPOSITIVO
 
-Este modulo es el encargado de realizar la conexion entre sensores y ademas proveer de un servidor node js RESTFULL
+Este modulo es el encargado de realizar la conexion entre sensores y ademas proveer de un servidor node js RESTFULL en Raspberry Pi
 
 
 ##Instrucciones node js server in rapsberry pi
