@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Informática - Estación de Monitoreo Ambiental</title>
+  <script src="https://cesiumjs.org/Cesium/Build/Cesium/Cesium.js"></script>
+  <style>
+      @import url(https://cesiumjs.org/Cesium/Build/Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer" class="fullSize"></div>
+  <div id="loadingOverlay"><h1>Loading...</h1></div>
+  <div id="toolbar">
+    <div id="terrainMenu"></div>
+    <div id="zoomButtons"></div>
+    <div id="toggleLighting"></div>
+    <div id="sampleButtons"></div>
+  </div>
+  <script>
+  var viewer = new Cesium.Viewer('cesiumContainer');
+
+  var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
+    url : 'https://assets.agi.com/stk-terrain/v1/tilesets/world/tiles',
+    requestWaterMask : true,
+    requestVertexNormals : true
+  });
+
+  var greenCylinder = viewer.entities.add({
+    name : 'Localizaci?n Estaci?n',
+    description:'<center><table border=1>\
+        <tr><th colspan=2>HJK-15372X</th></tr>\
+        <tr><td><b>Dispositivo</b></td><td>HJK-15372X</td></tr>\
+        <tr><td><b>Ubicaci?n</b></td><td>CL 85 KR 15</td></tr>\
+        <tr><td><b>CO2</b></td><td>10 ppb</td></tr>\
+        <tr><td><b>CO</b></td><td>15 ppb</td></tr>\
+        <tr><td><b>Humedad</b></td><td>40%</td></tr>\
+        <tr><td><b>Temperatura</b></td><td>10</td></tr>\
+      </table></center>\
+      <style>\
+        th{\
+            font-family: "Trebuchet MS";\
+            border: 1px solid #fff;\
+            background-color: #1B1E24;\
+            text-align: center;\
+            padding: 10px;\
+            color: white;\
+            size: 2;\
+        }\
+        tr{\
+            background-color: #EBEBEB;\
+            font-family: "Trebuchet MS";\
+            padding: 5px;\
+            border: 1px solid #fff;\
+            border-collapse: collapse;\
+        }\
+        td{\
+            padding: 2px;\
+            border: 1px solid #1B1E24;\
+            color: black;\
+        }\
+    </style>\
+    ',
+    position: Cesium.Cartesian3.fromDegrees(-74.055664,   4.669904, 2580.0),    
+    cylinder : {
+        length : 10,
+        topRadius : 2,
+        bottomRadius : 2,
+        material : Cesium.Color.GREEN.withAlpha(0.5),
+        outline : true,
+        outlineColor : Cesium.Color.DARK_GREEN
+    }
+  });
+  
+   
+  viewer.terrainProvider = cesiumTerrainProviderMeshes;
+  viewer.scene.globe.depthTestAgainstTerrain = true;  
+  viewer.zoomTo(greenCylinder);
+  
+  </script>
+</body>
+</html>

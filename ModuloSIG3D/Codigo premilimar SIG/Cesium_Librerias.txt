@@ -1,0 +1,41 @@
+Librerias de Cesium:
+
+Librerias ejemplo Sandcastle (javascript):
+
+https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/Sandcastle-header.js
+https://cesiumjs.org/Cesium/Build/CesiumUnminified/Cesium.js
+
+Librerias ejemplo Sandcastle (css):
+
+https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/templates/bucket.css
+https://cesiumjs.org/Cesium/Source/Widgets/widgets.css
+
+	https://cesiumjs.org/Cesium/Source/Widgets/shared.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Animation/Animation.css
+	https://cesiumjs.org/Cesium/Source/Widgets/BaseLayerPicker/BaseLayerPicker.css
+	https://cesiumjs.org/Cesium/Source/Widgets/CesiumWidget/CesiumWidget.css
+	https://cesiumjs.org/Cesium/Source/Widgets/CesiumInspector/CesiumInspector.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Cesium3DTilesInspector/Cesium3DTilesInspector.css
+	https://cesiumjs.org/Cesium/Source/Widgets/FullscreenButton/FullscreenButton.css
+	https://cesiumjs.org/Cesium/Source/Widgets/VRButton/VRButton.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Geocoder/Geocoder.css
+	https://cesiumjs.org/Cesium/Source/Widgets/InfoBox/InfoBox.css
+	https://cesiumjs.org/Cesium/Source/Widgets/SceneModePicker/SceneModePicker.css
+	https://cesiumjs.org/Cesium/Source/Widgets/ProjectionPicker/ProjectionPicker.css
+	https://cesiumjs.org/Cesium/Source/Widgets/PerformanceWatchdog/PerformanceWatchdog.css
+	https://cesiumjs.org/Cesium/Source/Widgets/NavigationHelpButton/NavigationHelpButton.css
+	https://cesiumjs.org/Cesium/Source/Widgets/SelectionIndicator/SelectionIndicator.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Timeline/Timeline.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Viewer/Viewer.css
+
+https://cesiumjs.org/Cesium/Source/Widgets/lighter.css
+	https://cesiumjs.org/Cesium/Source/Widgets/lighterShared.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Animation/lighter.css
+	https://cesiumjs.org/Cesium/Source/Widgets/BaseLayerPicker/lighter.css
+	https://cesiumjs.org/Cesium/Source/Widgets/CesiumWidget/lighter.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Geocoder/lighter.css
+	https://cesiumjs.org/Cesium/Source/Widgets/Timeline/lighter.css
+	https://cesiumjs.org/Cesium/Source/Widgets/NavigationHelpButton/lighter.css
+	
+
+
