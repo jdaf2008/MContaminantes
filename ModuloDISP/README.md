@@ -16,4 +16,4 @@ Este modulo es el encargado de realizar la conexion entre sensores y ademas prov
 7. CLonar y probar el repositorio.
 
 
-
+## Se traslada este repositorio a https://github.com/jdaf2008/ModDispositivo.git 
